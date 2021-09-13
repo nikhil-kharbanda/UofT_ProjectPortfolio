@@ -1,87 +1,189 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
-  
-  body {
-    background-color: #d9dcd6;
-  }
-  
-  .header {
-    padding: 20px;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-    background-color: #2a607c;
-    color: #ffffff;
-  }
-  
-  /*Renamed from SEO for clarity*/
-  .Horiseon {
-    color: #d9dcd6;
-  }
-  
-  header {
-    padding: 20px;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-    background-color: #2a607c;
-    color: #ffffff;
-  }
-  
-  h1 {
-    display: inline-block;
-    font-size: 48px;
-  }
-  
-  a {
-    color: #ffffff;
-    text-decoration: none;
-  }
-  
-  p {
-    font-size: 16px;
-  }
-  
-  .content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
-  }
-  
-  .footer {
-    padding: 30px;
-    clear: both;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #d9dcd6;
+}
+
+.header {
+  padding: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: #2a607c;
+  color: #ffffff;
+}
+
+/*Renamed from SEO for clarity*/
+.Name {
+  color: #d9dcd6;
+}
+
+header {
+  padding: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: #2a607c;
+  color: #ffffff;
+  margin-left: 0;
+}
+
+h1 {
+  display: inline-block;
+  font-size: 48px;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+p {
+  font-size: 16px;
+}
+
+image {
+}
+
+.image img {
+  padding-top: 25px;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+nav {
+  overflow: hidden;
+  /*background-color: #2a607c;*/
+  position: fixed;
+  top: 1px;
+  right: 5px;
+  width: 80%;
+  height: 40px;
+  float: right;
+  opacity: 0.7;
+}
+
+nav a {
+  float: left;
+  display: flex;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  float: right;
+}
+
+nav a:hover {
+  background: #ddd;
+  color: black;
+}
+
+main {
+  /* Turns this element into a flexbox */
+  display: flex;
+  /* Forces elements to the next line if they don't fit */
+  flex-wrap: wrap;
+  margin-top: 2%;
+}
+
+.content {
+  height: 1000px;
+  width: 100%;
+  padding-top: 20px;
+  margin-left: 0px;
+  background-image: url("background1.png");
+}
+
+.content h2 {
+  color: white;
+  text-decoration: underline;
+  margin-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.content h3 {
+  color: white;
+  padding-left: 10px;
+}
+
+.content p {
+  color: white;
+  margin-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.card {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 10px;
+    flex: 0 0 400px;
+    display:inline-flex;
+    padding-left: 50px;
+    padding-right: 50px;
+margin-top: 10px;
+
+}
+
+.cardBigger {
+    /* A flex-basis of 200px sets the starting width */
+    /* A flex-grow value of 1 allows the elements to evenly grow to fill the remaining space */
+    flex: 1 0 200px;
+    padding: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
     text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    display:inline-flex;
+
   }
-  
-  .footer h2 {
-    font-size: 20px;
-  }
-  
-  /*Re-did navigation bar */
+
+#AboutMe {
+}
+
+#Projects {
+}
+
+#ExternalLinks {
+}
+
+.footer {
+  padding: 30px;
+  clear: both;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+}
+
+.footer h2 {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
   nav {
-    padding-top: 15px;
-    margin-right: 20px;
     float: right;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    font-size: 20px;
+    display: block;
   }
-  
-  nav ul {
-    list-style-type: none;
+
+  main{
+    float: left;
+    display: block;
   }
-  
-  nav ul li {
-    display: inline-block;
-    margin-left: 25px;
-  }
-  
-  .content{
-      height: 150px;
-      width: 200px;
-      padding-top: 20px;
-      background-image: radial-gradient(#C4B7CB 10%, #BBC7CE 15%, #BFEDEF 20%, #98E2C6 25%, #545C52 30%);
-  }
+}
