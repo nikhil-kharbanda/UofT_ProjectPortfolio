@@ -13,4 +13,8 @@ To meet this projects criteria, I had to:\
 [X] Made my first application project bigger than the other projects\
 [X] Linked my first application webpage to the image (when image is clicked, open my first webpage in a different tab)\
 [X] Made my portfolio webpage responsive (resizing it may look a messy when screen is small, but projects and nav bar responds properly)\
-[X] Created an application link using GITHub pages\
+[X] Created an application link using GITHub pages
+
+![Image of the working webpage](Assets/Demo/WorkingImg.gif)
+
+An image of my webpage can be found in the Assets/Demo folder (file name WorkingImg.gif) and in the readme on GitHub.
