@@ -16,5 +16,6 @@ To meet this projects criteria, I had to:\
 [X] Created an application link using GITHub pages
 
 ![Image of the working webpage](Assets/Demo/WorkingImg.gif)
+![Image of the working webpage](Assets/Demo/WorkingImg2.gif)
 
 An image of my webpage can be found in the Assets/Demo folder (file name WorkingImg.gif) and in the readme on GitHub.
