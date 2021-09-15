@@ -8,26 +8,6 @@ body {
   background-color: #d9dcd6;
 }
 
-.header {
-  padding: 20px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  background-image: linear-gradient(
-    #03045e,
-    #023e8a,
-    #0077b6,
-    #0096c7,
-    #00b4d8,
-    #48cae4,
-    #90e0ef,
-    #ade8f4,
-    #caf0f8
-  );
-  width: 100%;
-  height: 200px;
-  color: #ffffff;
-}
-
 /*Changed the color for my name to be displayed*/
 
 .Name {
@@ -79,16 +59,11 @@ p {
   font-size: 16px;
 }
 
-/*For an image to be displayed */
-
-image {
-}
-
 /*CSS format for the profile picture image in the image section
 Making it a circle crop, displaying it in the center of the header bar*/
 
-.image img {
-  padding-top: 25px;
+#imageMe img {
+  padding-top: 20px;
   border-radius: 50%;
   display: block;
   margin-left: auto;
@@ -121,9 +96,13 @@ nav a {
 
 /*Setting the unordered design code for the nav panel*/
 
+
 nav ul {
   list-style-type: none;
+  display: inline-flex;
+  flex-wrap: wrap;
 }
+
 
 /*Setting the list design code for the nav panel*/
 
@@ -145,9 +124,7 @@ nav a:hover {
 /*The main content, setting everything to flex was important*/
 
 main {
-  /* Turns this element into a flexbox */
   display: flex;
-  /* Forces elements to the next line if they don't fit */
   flex-wrap: wrap;
   margin-top: 0;
 }
@@ -155,7 +132,7 @@ main {
 /*The default code design for the content unless specified. Also, setting a background*/
 
 .content {
-  height: 2000px;
+  height: 3000px;
   width: 100%;
   padding-top: 20px;
   margin-left: 0px;
@@ -173,16 +150,6 @@ main {
   font-size: 40px;
 }
 
-/*For the h3 in the content section, set format*/
-
-.content h3 {
-  color: white;
-  padding-left: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-left: 15px;
-}
-
 /*For the paragraphs in the content section, set format*/
 
 .content p {
@@ -193,14 +160,12 @@ main {
   font-size: 20px;
 }
 
-/*Helps make the link work on click*/
+/*Helps make the link work on click, uses the already defined font formats*/
 
 #AboutMe {
 }
 
 /*Design code for the projects section*/
-
-
 /*First project is unique, hence its an id. Id also overwrites class so this would take priority*/
 
 #firstProj {
@@ -214,17 +179,19 @@ main {
   margin: 0px;
 }
 
-/*First Project image formatting, figuring out why I need the "-30px" margin*/
+/*First Project image formatting*/
 
 #firstProj img {
   width: 100%;
   border-radius: 0 0 50px 50px;
 }
 
+/*Styling the header for the first project card*/
 #firstProj header{
   border-radius: 50px 50px 0 0;
 }
 
+/*When the first project image is hovered, add another cyan dashed border to show user its about to be selected */
 #firstProj img:hover{
   border-style:dashed;
   border-width: 5px;
@@ -233,6 +200,7 @@ main {
   border-color:cyan;
 }
 
+/*The other development projects as placeholders*/
 .other_projs{
   flex: 2;
   padding: 20px;
@@ -245,6 +213,7 @@ main {
   padding-bottom: 50px;
 }
 
+/*The cards for the placeholder projects*/
 .card{
   border-style: solid;
   border-color: chartreuse;
@@ -254,18 +223,17 @@ main {
     flex: 0 2 500px;
 }
 
+/*Styling the header for the other project card's*/
 .card header {
-  padding: 20px;
+  padding: 25px;
 }
 
-.card p {
-  text-align: center;
-}
-
+/*Other Project image formatting*/
 .card img {
   width: 100%;
 }
 
+/*When any other project image are hovered, add another cyan dashed border to show user its about to be selected */
 .card img:hover{
   border-style:dashed;
   border-width: 5px;
@@ -274,9 +242,14 @@ main {
   border-color:cyan;
 }
 
-/*To make the link from nav bar to section work. Using default created headers*/
+/*To make the link from nav bar to section work. Using default created fonts*/
 
 #ExternalLinks {
+}
+
+/*Shift the link to the left to make it not cut*/
+#ExternalLinks a{
+  margin-left: 50px;
 }
 
 /*Design code for the footer at the bottom of the page*/
@@ -313,16 +286,50 @@ main {
   height: 35px;
 }
 
-/*Making it a responsive screen*/
+/*Form CSS styling*/
+form{
+  margin-left: 50px;
+
+}
+
+/*The text box styling*/
+input[type=text], select, textarea{
+  width: 30%;
+  padding: 12px;
+}
+
+/*The label for the textbox*/
+form label{
+  color: white;
+}
+
+/*Making the submit button at the bottom*/
+input[type=submit] {
+  padding: 12px 20px;
+  border: none;
+  cursor:pointer;
+}
+
+/*Hovering over the submit button*/
+input[type=submit]:hover {
+  background-color: #09e0ab;
+}
+
+/*Making it a responsive screen for a mobile device*/
 
 @media screen and (max-width: 768px) {
   nav {
-
-    flex-direction: column;
+    flex-direction: row;
   }
-  .image img {
+  .imageMe img {
     width: 10%;
   }
+
+  main{
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
   .footer img {
     display: inline-flex;
   }
