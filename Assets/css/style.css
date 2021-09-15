@@ -100,12 +100,9 @@ Making it a circle crop, displaying it in the center of the header bar*/
 Setting an opacity to allow the text to be read over content*/
 
 nav {
-  overflow: hidden;
   position: fixed;
   top: 1px;
   right: 5px;
-  width: 80%;
-  height: 40px;
   float: right;
   opacity: 0.7;
 }
@@ -203,33 +200,7 @@ main {
 
 /*Design code for the projects section*/
 
-#Projects {
-  flex: 4;
-  padding: 50px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: flex-start;
-}
 
-#proj_section h2{
-  display: block;
-  float: left;
-}
-
-#proj_section p{
-  display: block;
-  float: left;
-}
-
-#Projects_card {
-  flex: 4;
-  padding: 50px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: flex-start;
-}
 
 
 
@@ -335,29 +306,13 @@ main {
 
 @media screen and (max-width: 768px) {
   nav {
-    float: right;
-    display: inline-flex;
-  }
-  .image img {
-    width: 10%;
-  }
-  .footer img {
-    display: inline-flex;
-  }
-}
 
-@media screen and (max-width: 500px) {
-  nav {
-    float: right;
-    display: inline-flex;
+    flex-direction: column;
   }
   .image img {
     width: 10%;
   }
   .footer img {
     display: inline-flex;
-  }
-  .content {
-    width: 100%;
   }
 }
