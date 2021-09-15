@@ -69,7 +69,7 @@ h1 {
 a {
   color: #ffffff;
   text-decoration: none;
-  margin-left: 30px;
+
   font-size: 20px;
 }
 
@@ -201,48 +201,6 @@ main {
 /*Design code for the projects section*/
 
 
-
-
-
-/* #proj_section h2{
-  float:left;
-  padding-bottom: 50px;
-  margin-left: -420px;
-} */
-
-/*Cards for the projects that are displayed*/
-
-.card {
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 50px;
-  border-color: chartreuse;
-  padding: 10px;
-  flex: 0 0 600px;
-  box-shadow: 10px 10px 5px #aaaaaa;
-  margin: 20px;
-}
-
-/*Header for the cards*/
-
-.card header {
-  border-radius: 50px 50px 0px 0px;
-  padding: 20px;
-  font-size: 25px;
-}
-
-/*The image inside the card*/
-
-.card img {
-  width: 100%;
-  margin: 0px;
-}
-
-.card a:hover {
-  border-color: crimson;
-  border-style: dashed;
-}
-
 /*First project is unique, hence its an id. Id also overwrites class so this would take priority*/
 
 #firstProj {
@@ -260,7 +218,60 @@ main {
 
 #firstProj img {
   width: 100%;
-  margin-left: -30px;
+  border-radius: 0 0 50px 50px;
+}
+
+#firstProj header{
+  border-radius: 50px 50px 0 0;
+}
+
+#firstProj img:hover{
+  border-style:dashed;
+  border-width: 5px;
+  border-width: 10px;
+  border-radius: 50px;
+  border-color:cyan;
+}
+
+.other_projs{
+  flex: 2;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;;
+  align-content: space-around;
+  row-gap: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.card{
+  border-style: solid;
+  border-color: chartreuse;
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 10px;
+    flex: 0 2 500px;
+}
+
+.card header {
+  padding: 20px;
+}
+
+.card p {
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card img:hover{
+  border-style:dashed;
+  border-width: 5px;
+  border-width: 10px;
+  border-radius: 50px;
+  border-color:cyan;
 }
 
 /*To make the link from nav bar to section work. Using default created headers*/
