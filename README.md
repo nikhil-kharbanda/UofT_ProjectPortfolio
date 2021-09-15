@@ -15,7 +15,7 @@ To meet this projects criteria, I had to:\
 [X] Made my portfolio webpage responsive (resizing it may look a messy when screen is small, but projects and nav bar responds properly)\
 [X] Created an application link using GITHub pages
 
-![Image of the working webpage](WorkingImg.png)
-![Image of the working webpage](WorkingImg2.png)
+![Image of the working webpage](Assets/Demo/WorkingImg.png)
+![Image of the working webpage](Assets/Demo/WorkingImg2.png)
 
 An image of my webpage can be found in the Assets/Demo folder (file name WorkingImg.gif) and in the readme on GitHub.
