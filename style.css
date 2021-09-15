@@ -1,189 +1,311 @@
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 body {
-  background-color: #d9dcd6;
+    background-color: #d9dcd6;
 }
 
 .header {
-  padding: 20px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  background-color: #2a607c;
-  color: #ffffff;
+    padding: 20px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    background-image: linear-gradient(#03045E, #023E8A, #0077B6, #0096C7, #00B4D8, #48CAE4, #90E0EF, #ADE8F4, #CAF0F8);
+    width: 100%;
+    height: 200px;
+    color: #ffffff;
 }
 
-/*Renamed from SEO for clarity*/
+
+/*Changed the color for my name to be displayed*/
+
 .Name {
-  color: #d9dcd6;
+    color: #d9dcd6;
 }
+
+
+/*For the header bar, determined the size, the font family, made a gradiaent, and made the color all white*/
 
 header {
-  padding: 20px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  background-color: #2a607c;
-  color: #ffffff;
-  margin-left: 0;
+    padding: 20px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    /*background-color: #2a607c;*/
+    background-image: linear-gradient(#03045E, #023E8A, #0077B6, #0096C7, #00B4D8, #48CAE4, #90E0EF, #ADE8F4, #CAF0F8);
+    color: #ffffff;
+    margin-left: 0;
 }
+
+
+/*Change all h1 to following format
+inline block with a font size of 60*/
 
 h1 {
-  display: inline-block;
-  font-size: 48px;
+    display: inline-block;
+    font-size: 60px;
 }
+
+
+/*All hyperlinks to have format of having white text, and 30px left of the margin*/
 
 a {
-  color: #ffffff;
-  text-decoration: none;
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 20px;
 }
+
+
+/*All paragraphs to have a default size of 16px*/
 
 p {
-  font-size: 16px;
+    font-size: 16px;
 }
 
-image {
-}
+
+/*For an image to be displayed */
+
+image {}
+
+
+/*CSS format for the profile picture image in the image section
+Making it a circle crop, displaying it in the center of the header bar*/
 
 .image img {
-  padding-top: 25px;
-  border-radius: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+    padding-top: 25px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
+
+
+/*For the nav bar, setting the position to fixed so its always displayed
+Setting an opacity to allow the text to be read over content*/
 
 nav {
-  overflow: hidden;
-  /*background-color: #2a607c;*/
-  position: fixed;
-  top: 1px;
-  right: 5px;
-  width: 80%;
-  height: 40px;
-  float: right;
-  opacity: 0.7;
+    overflow: hidden;
+    position: fixed;
+    top: 1px;
+    right: 5px;
+    width: 80%;
+    height: 40px;
+    float: right;
+    opacity: 0.7;
 }
+
+
+/*Setting the hyperlink design code for the nav panel*/
 
 nav a {
-  float: left;
-  display: flex;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+    float: left;
+    display: flex;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
 }
+
+
+/*Setting the unordered design code for the nav panel*/
 
 nav ul {
-  list-style-type: none;
+    list-style-type: none;
 }
+
+
+/*Setting the list design code for the nav panel*/
 
 nav ul li {
-  display: inline-block;
-  float: right;
+    display: flex;
+    flex-direction: column-reverse;
+    float: right;
 }
+
+
+/*Changing the color of word depending on if hovered*/
 
 nav a:hover {
-  background: #ddd;
-  color: black;
+    background: #ddd;
+    color: black;
+    font-style: italic;
+    font-weight: bold;
 }
+
+
+/*The main content, setting everything to flex was important*/
 
 main {
-  /* Turns this element into a flexbox */
-  display: flex;
-  /* Forces elements to the next line if they don't fit */
-  flex-wrap: wrap;
-  margin-top: 2%;
+    /* Turns this element into a flexbox */
+    display: flex;
+    /* Forces elements to the next line if they don't fit */
+    flex-wrap: wrap;
+    margin-top: 0;
 }
+
+
+/*The default code design for the content unless specified. Also, setting a background*/
 
 .content {
-  height: 1000px;
-  width: 100%;
-  padding-top: 20px;
-  margin-left: 0px;
-  background-image: url("background1.png");
+    height: 2000px;
+    width: 100%;
+    padding-top: 20px;
+    margin-left: 0px;
+    background-image: url("./img/background1.png");
 }
+
+
+/*For the h2 in the content section, set format*/
 
 .content h2 {
-  color: white;
-  text-decoration: underline;
-  margin-left: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+    color: white;
+    text-decoration: underline;
+    margin-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 40px;
 }
+
+
+/*For the h3 in the content section, set format*/
 
 .content h3 {
-  color: white;
-  padding-left: 10px;
+    color: white;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 15px;
 }
 
+
+/*For the paragraphs in the content section, set format*/
+
 .content p {
-  color: white;
-  margin-left: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+    color: white;
+    margin-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
 }
+
+
+/*Helps make the link work on click*/
+
+#AboutMe {}
+
+
+/*Design code for the projects section*/
+
+#Projects {
+    flex: 4;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+
+/*Cards for the projects that are displayed*/
 
 .card {
     border-style: solid;
     border-width: 1px;
-    border-radius: 10px;
+    border-radius: 50px;
+    border-color: chartreuse;
     padding: 10px;
-    flex: 0 0 400px;
-    display:inline-flex;
-    padding-left: 50px;
-    padding-right: 50px;
-margin-top: 10px;
-
+    flex: 0 0 500px;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    margin: 20px;
 }
 
-.cardBigger {
-    /* A flex-basis of 200px sets the starting width */
-    /* A flex-grow value of 1 allows the elements to evenly grow to fill the remaining space */
-    flex: 1 0 200px;
-    padding: 10px;
-    padding-left: 100px;
-    padding-right: 100px;
-    text-align: center;
+
+/*First project is unique, hence its an id. Id also overwrites class so this would take priority*/
+
+#firstProj {
     border-style: solid;
-    border-width: 1px;
-    display:inline-flex;
-
-  }
-
-#AboutMe {
+    border-width: 5px;
+    border-radius: 50px;
+    border-color: chartreuse;
+    padding: 10px;
+    flex: 0 0 800px;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    margin: 0px;
 }
 
-#Projects {
+
+/*Header for the cards*/
+
+.card header {
+    border-radius: 50px 50px 0px 0px;
+    padding: 20px;
+    font-size: 25px;
 }
 
-#ExternalLinks {
+
+/*The image inside the card*/
+
+.card img {
+    width: 100%;
 }
+
+
+/*To make the link from nav bar to section work*/
+
+#ExternalLinks {}
+
+
+/*Design code for the footer at the bottom of the page*/
 
 .footer {
-  padding: 30px;
-  clear: both;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  text-align: center;
+    padding: 30px;
+    clear: both;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    text-align: center;
 }
+
+
+/*Heading 2 for the footer*/
 
 .footer h2 {
-  font-size: 20px;
+    font-size: 20px;
 }
 
-@media screen and (max-width: 768px) {
-  nav {
-    float: right;
-    display: block;
-  }
 
-  main{
-    float: left;
-    display: block;
-  }
+/*The images in the footer. These images are also the contant*/
+
+.footer img {
+    width: 35px;
+    height: 35px
+}
+
+
+/*Making it a responsive screen*/
+
+@media screen and (max-width: 768px) {
+    nav {
+        float: right;
+        display: inline-flex;
+    }
+    .image img {
+        width: 10%;
+    }
+    .footer img {
+        display: inline-flex;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    nav {
+        float: right;
+        display: inline-flex;
+    }
+    .image img {
+        width: 10%;
+    }
+    .footer img {
+        display: inline-flex;
+    }
 }
