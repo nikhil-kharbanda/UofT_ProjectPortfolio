@@ -18,4 +18,4 @@ To meet this projects criteria, I had to:\
 ![Image of the working webpage](Assets/Demo/WorkingImg.png)
 ![Image of the working webpage](Assets/Demo/WorkingImg2.png)
 
-An image of my webpage can be found in the Assets/Demo folder (file name WorkingImg.gif) and in the readme on GitHub.
+An image of my webpage can be found in the Assets/Demo folder (file name WorkingImg.png and WorkingImg2.png) and in the readme on GitHub.
